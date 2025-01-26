@@ -1,14 +1,19 @@
-//46: Factorial of a number:
+//63:Q4:factorial of a number:
+package stringMethods;
 
-package assigments;
+import java.util.Scanner;
 
-public class Practice {
+public class Assign {
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number:");
+		int num = sc.nextInt();
 		int f = 1;
-		for (int i = 1; i <= 5; i++) {
+		for (int i = 1; i <= num; i++) {
 			f = f * i;
 
 		}
-		System.out.println(f);
+		System.out.println("Factorial of the number is: " + f);
+		sc.close();
 	}
 }
