@@ -1,0 +1,18 @@
+package Oops;
+
+public class Try_catch_finally {
+
+	public static void main(String[] args) {
+		try {
+			int i = 10;
+			System.out.println(i / -0);
+		} catch (ArithmeticException e) {
+			System.out.println(e.getMessage());
+
+		} finally {
+			System.out.println("This is finnaly");
+		}
+		System.out.println("Stopped");
+	}
+
+}
